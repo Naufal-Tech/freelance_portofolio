@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100;300;400&family=Poppins:ital,wght@0,300;0,400;0,500;1,600&family=Rancho&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #3a3a3a;
+}
+
+.navbar {
+  background-color: #3a3a3a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 20px 0;
+ 
+}
+
+.kontak{
+  margin-left: 40px;
+  color: white;
+}
+.container {
+  max-width: 968px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-link contact-link{
+  text-decoration: none;
+}
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+  border-radius: 2px;
+}
+
+.navbar-toggler.active .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.navbar-collapse.show {
+  height: auto;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  margin-bottom: 2px;
+  margin-left: 30px;  
+}
+
+
+.nav-link {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #777777;
+}
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+  
+  .navbar-collapse {
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+

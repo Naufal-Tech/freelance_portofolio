@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.Kiri {
+  position: absolute;
+  margin-top: -240px;
+}
+
+.Kanan {
+  position: relative;
+  left: 750px;
+  width: 36%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  height: 115px;
+  margin-top: 290px;
+}
+
+.Kanan h1 {
+  font-size: 35px;
+  letter-spacing: 1.5px;
+}
+
+.Kanan p {
+  font-size: 18px;
+  margin-top: 35px;
+  color: #B5B5B5;
+}
+
+.Contact-item {
+  margin-top: 35px;
+}
+
+.Contact-item img:hover{
+  opacity: 0.8;
+
+}
+
+.Contact-item img{
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  transition: opacity 0.3s;
+}
+
+.item {
+  list-style: none;
+}
+
+.About-container {
+  margin: auto;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 0.15fr 0.15fr 0fr;
+  margin-left: 980px;
+  margin-top: 224px;
+  filter: invert(50%);
+  position: relative;
+}
+
+.whatsapp-img {
+  width: 32px;
+  height: 32px;
+}
+
+.instagram-img {
+  width: 32px;
+  height: 32px;
+}
+
+.linkedin-img {
+  width: 32px;
+  height: 32px;
+  color: #B5B5B5;
+}
+
+@media screen and (max-width: 768px) {
+  .About-container {
+    text-align: center;
+  }
+
+  .Kiri {
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .Kanan {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 20px;
+    left: 150px;
+  }
+
+  #grid-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 450px;
+    left: 255px;
+    grid-template-columns: 0.15fr 0.15fr 0.15fr;
+    
+  }
+}
+
+
+
