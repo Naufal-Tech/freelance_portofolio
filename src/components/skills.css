@@ -1,86 +1,114 @@
-.Skills-container{
-    padding-top: -100px;
+.Skills-container {
+  padding-top: -100px;
 }
 
-.Skills{
-    text-align: center;
-}
-.Skills h4{
-    color: white;
-    padding-top: 100px;
-    
+.Skills {
+  text-align: center;
 }
 
-.Skills h1{
-    color: #DB7212;
-    font-size: 40px;
+.Skills h4 {
+  color: white;
+  padding-top: 100px;
 }
 
-.Tools{
-    text-align: center;
-    margin: 60px;
-    margin-bottom: 100px;
-    
+.Skills h1 {
+  color: #db7212;
+  font-size: 40px;
 }
 
-.Figma{
-    margin-right: 55px;
+.Tools {
+  text-align: center;
+  margin: 60px;
+  margin-bottom: 100px;
 }
 
-.Canva{
-    margin-right: 55px;
+.Figma {
+  margin-right: 75px; /* setting margin atar komponen */
 }
 
-.Html{
-    margin-right: 55px;
+.Canva {
+  margin-right: 75px; /* setting margin atar komponen */
 }
 
-.Css{
-    margin-right: 55px;
+.Html {
+  margin-right: 75px; /* setting margin atar komponen */
 }
-.Js{
-    margin-right: 55px;
+
+.Css {
+  margin-right: 75px; /* setting margin atar komponen */
+}
+
+.Js {
+  margin-right: 75px; /* setting margin atar komponen */
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0);
-    }
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
 
 .Tools img {
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    opacity: 0.5; 
-    transition: opacity 0.3s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  width: 100px; /* control image size agar memiliki ukuran yang sama */
+  height: 100px; /* control image size agar memiliki ukuran yang sama */
 }
 
 .Tools img.clicked {
-    animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 
 .Tools img:hover {
-    opacity: 50; 
-    transform: scale(1.1);
-  }
+  opacity: 50;
+  transform: scale(1.1);
+}
 
 .Tools img.clicked.show {
-    animation-name: fadeIn;
-    transition: transform 0.5s ease-out;
+  animation-name: fadeIn;
+  transition: transform 0.5s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .Tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Tools img {
+    margin: 15px; /* margin di mobile */
+    padding: 2px; /* padding di mobile */
+  }
+}
+
+/* default state aos */
+[data-aos] {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+}
+
+/* on-scroll aos */
+[data-aos].aos-animate {
+  opacity: 1;
+  visibility: visible;
 }

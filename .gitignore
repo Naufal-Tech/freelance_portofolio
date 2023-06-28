@@ -5,6 +5,16 @@
 /.pnp
 .pnp.js
 
+./latihan.js
+.latihan.js
+/laithan.js
+
+
+./skill.css
+.skill.css
+/skill.css
+
+
 # testing
 /coverage
 

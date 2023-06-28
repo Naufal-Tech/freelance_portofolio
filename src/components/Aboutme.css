@@ -1,110 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+.About-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
 
 .Kiri {
-  position: absolute;
-  margin-top: -240px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Kiri img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .Kanan {
-  position: relative;
-  left: 750px;
-  width: 36%;
+  width: 50%;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  height: 115px;
-  margin-top: 290px;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 0.5rem;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Merubah komponen kanan menjadi rata tengah */
+  margin-top: 8rem;
 }
 
 .Kanan h1 {
-  font-size: 35px;
+  font-size: 2.5rem;
   letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  text-align: center; /* Mengubah teks kanan menjadi rata tengah */
 }
 
 .Kanan p {
-  font-size: 18px;
-  margin-top: 35px;
-  color: #B5B5B5;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #b5b5b5;
+  text-align: center; /* Mengubah teks kanan menjadi rata tengah */
 }
 
 .Contact-item {
-  margin-top: 35px;
+  margin-top: 1rem;
 }
 
-.Contact-item img:hover{
+.Contact-item a:hover .contact-icon {
   opacity: 0.8;
-
 }
 
-.Contact-item img{
+.Contact-item .contact-icon {
   animation-duration: 0.5s;
   animation-fill-mode: both;
   transition: opacity 0.3s;
 }
 
-.item {
-  list-style: none;
+.Social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.About-container {
-  margin: auto;
+.Social-links a {
+  margin: 0 1vw;
 }
 
-#grid-container {
-  display: grid;
-  grid-template-columns: 0.15fr 0.15fr 0fr;
-  margin-left: 980px;
-  margin-top: 224px;
-  filter: invert(50%);
-  position: relative;
+.Social-links a:hover {
+  opacity: 0.8;
 }
 
-.whatsapp-img {
-  width: 32px;
-  height: 32px;
+.Social-links a .social-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #b5b5b5;
 }
 
-.instagram-img {
-  width: 32px;
-  height: 32px;
-}
-
-.linkedin-img {
-  width: 32px;
-  height: 32px;
-  color: #B5B5B5;
-}
+/* Media Query Mobile */
 
 @media screen and (max-width: 768px) {
   .About-container {
-    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 1rem; /* Adjust padding on mobile view */
   }
 
   .Kiri {
+    margin-top: 2rem;
+    margin-right: 5rem;
     width: 100%;
-    position: relative;
-    margin-top: 0;
+    height: auto;
+    margin-bottom: 1.5rem; /* Tambahkan margin-bottom on mobile view */
+  }
+
+  .Kiri img {
+    width: 100%;
+    max-height: 300px; /* Atur max-height for image size on mobile view */
+    object-fit: cover;
   }
 
   .Kanan {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    margin-top: 20px;
-    left: 150px;
+    margin-top: 2rem; /* Tambahkan margin-top on mobile view */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Rata tengah isi konten kanan */
   }
 
-  #grid-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    margin-top: 450px;
-    left: 255px;
-    grid-template-columns: 0.15fr 0.15fr 0.15fr;
-    
+  .Kanan h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .Kanan p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .Contact-item,
+  .Social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .Contact-item a,
+  .Social-links a {
+    margin: 0 1rem; /* Tambahkan margin on spacing between icons */
+  }
+
+  .Contact-item .contact-icon,
+  .Social-links .social-icon {
+    width: auto;
+    height: 2.5rem;
+    color: #b5b5b5;
   }
 }
-
-
-
